@@ -16,4 +16,6 @@ def send_habit():
             message = f"Напоминание: Сегодня я должен {habit.action}, в {habit.time}. Место: {habit.place}."
             send_telegram_message(tg_chat_id, message)
         else:
-            print(f"Пользователь {habit.user.first_name} {habit.user.last_name} не указал Telegram ID.")
+            print(
+                f"Пользователь {habit.user.first_name} {habit.user.last_name} не указал Telegram ID."
+            )

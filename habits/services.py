@@ -10,7 +10,7 @@ def send_telegram_message(chat_id, message):
     return:
     """
     params = {
-        'text': message,
-        'chat_id': chat_id,
+        "text": message,
+        "chat_id": chat_id,
     }
-    requests.get(f'{TELEGRAM_URL}{TELEGRAM_TOKEN}/sendMessage', params=params)
+    requests.get(f"{TELEGRAM_URL}{TELEGRAM_TOKEN}/sendMessage", params=params)
